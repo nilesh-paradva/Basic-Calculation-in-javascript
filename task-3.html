@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr align="center">
+            <td>lenth</td>
+            <td>Width</td>
+            <td>Ractangle of area</td>
+        </tr>
+        <tr align="center">
+            <td id="lanth-1"></td>
+            <td id="width-2"></td>
+            <td id="rac_area"></td>
+        </tr>
+    </table>
+    <script>
+
+        var lanth, width;
+
+        lanth = parseInt(prompt("Enter Your Tringle Height:- "));
+        width = parseInt(prompt("Enter Your Tringle width:- "));
+
+        
+        document.getElementById("lanth-1").innerHTML = lanth;
+        document.getElementById("width-2").innerHTML = width;
+        
+        //tringle of area formula:- l*w;
+
+        var rac_are = lanth*width;
+
+        document.getElementById("rac_area").innerHTML = rac_are;
+
+    </script>
+</body>
+</html>

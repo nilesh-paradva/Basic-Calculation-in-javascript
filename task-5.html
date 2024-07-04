@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- a² – b² = (a-b)(a+b) :-->
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr align="center">
+            <td>a*a</td>
+            <td>b*b</td>
+            <td>(a*a)-(b*b)</td>
+            <td>(a*a)(a+b)</td>
+        </tr>
+        <tr align="center">
+            <td id="a"></td>
+            <td id="b"></td>
+            <td id="c"></td>
+            <td id="d"></td>
+        </tr>
+    </table>
+
+    <script>
+        var a1,b2,b3,c1,an1;
+
+        a1 = parseInt(prompt("Enter Your a number:- "));
+        b2 = parseInt(prompt("Enter Your b number:- "));
+        
+        a2 = a1*a1;
+        b3 = b2*b2;
+        
+        c1= a2-b3;
+        
+        an1= (a1-b2) * (a1 + b2);
+
+        document.getElementById("a").innerHTML = a2;
+        document.getElementById("b").innerHTML = b3;
+        document.getElementById("c").innerHTML = c1;
+        document.getElementById("d").innerHTML = an1;
+
+    </script>
+</body>
+
+</html>

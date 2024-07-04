@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr align="center">
+            <td>pai - value</td>
+            <td>radius</td>
+            <td>Circle of area</td>
+        </tr>
+        <tr align="center">
+            <td>3.14</td>
+            <td id="radius"></td>
+            <td id="cir_area"></td>
+        </tr>
+    </table>
+
+    <script>
+        var radius;
+
+        radius = parseInt(prompt("Enter Your :- "));
+
+        document.getElementById("radius").innerHTML = radius;
+
+        //tringle of area formula:- 
+
+        var cir_are = 3.14*(radius * radius);
+
+        document.getElementById("cir_area").innerHTML = cir_are;
+
+    </script>
+</body>
+
+</html>

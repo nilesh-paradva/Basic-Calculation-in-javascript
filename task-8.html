@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- (a-b-c)² = a²+b²+c²-2ab-2ac+2bc -->
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr align="center">
+            <td>(a+b+c)²</td>
+            <td>a²+b²+c²+2ab+2ac+2bc</td>
+        </tr>
+        <tr align="center">
+            <td id="a"></td>
+            <td id="ans"></td>
+        </tr>
+    </table>
+
+    <script>
+        var a1,b2,b3,c1,an1;
+
+        a1 = parseInt(prompt("Enter Your a number:- "));
+        b2 = parseInt(prompt("Enter Your b number:- "));
+        c3 = parseInt(prompt("Enter Your c number:- "));
+
+        b3 = (a1-b2-c3)*(a1-b2-c3)*(a1-b2-c3);
+
+        ans = ((a1*a1)+(b2*b2)+(c3*c3))-((2*a1*b2)-(2*a1*c3)-(2*b2*c3));
+
+        document.getElementById("a").innerHTML = b3;
+        document.getElementById("ans").innerHTML = ans;
+
+    </script>
+</body>
+
+</html>

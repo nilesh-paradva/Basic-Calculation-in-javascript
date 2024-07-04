@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr align="center">
+            <td>Height</td>
+            <td>Width</td>
+            <td>Tringle of area</td>
+        </tr>
+        <tr align="center">
+            <td id="height-1"></td>
+            <td id="width-2"></td>
+            <td id="tri_area"></td>
+        </tr>
+    </table>
+    <script>
+
+        var height, width;
+
+        height = parseInt(prompt("Enter Your Tringle Height:- "));
+        width = parseInt(prompt("Enter Your Tringle width:- "));
+
+        
+        document.getElementById("height-1").innerHTML = height;
+        document.getElementById("width-2").innerHTML = width;
+        
+        //tringle of area formula:- 1/2 * (h*w); = 0.5*(h*w)
+
+        var tri_are = 0.5*(height*width);
+
+        document.getElementById("tri_area").innerHTML = tri_are;
+
+    </script>
+</body>
+</html>
